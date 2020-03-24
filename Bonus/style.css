@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenitore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction:column;
+}
+
+h1{
+  color: red;
+  text-align: center;
+}
+
+h2{
+  color: black;
+  padding-top: 20px;
+}
