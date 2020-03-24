@@ -13,22 +13,21 @@ cognomi.push(cognomeUtente);
 console.log(cognomi);
 
 //Metto in ordine alfabetico i cognomi e li salvo
-var listaOrdinata = cognomi.sort();
+cognomi.sort();
 
 var elemento;
 
 //Stampo in pagina la lista ordinata in ordine alfabetico
-for (var i = 0; i < listaOrdinata.length; i++) {
+for (var i = 0; i < cognomi.length; i++) {
 
-  lista = listaOrdinata[i];
+  lista = cognomi[i];
   elemento = document.getElementById('lista').innerHTML;
 
   document.getElementById("lista").innerHTML = elemento + "<li>" + lista + "</li>";
 }
 
 //Scrivo la posizione della lista in cui l'utente si trova
-var posizione = (listaOrdinata.indexOf(cognomeUtente)) +1;
+var posizione = (cognomi.indexOf(cognomeUtente)) +1;
 
 //Stampo la posizione della lista in cui il nuovo utente si trova
-
 document.getElementById("numero").innerHTML = "Il tuo cognome si trova nella posizione numero " + posizione;
