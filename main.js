@@ -20,8 +20,15 @@ var elemento;
 //Stampo in pagina la lista ordinata in ordine alfabetico
 for (var i = 0; i < listaOrdinata.length; i++) {
 
-  lista = listaOrdinata [i];
+  lista = listaOrdinata[i];
   elemento = document.getElementById('lista').innerHTML;
 
   document.getElementById("lista").innerHTML = elemento + "<li>" + lista + "</li>";
 }
+
+//Scrivo la posizione della lista in cui l'utente si trova
+var posizione = (listaOrdinata.indexOf(cognomeUtente)) +1;
+
+//Stampo la posizione della lista in cui il nuovo utente si trova
+
+document.getElementById("numero").innerHTML = "Il tuo cognome si trova nella posizione numero " + posizione;
